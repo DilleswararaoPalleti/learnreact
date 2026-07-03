@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
 
     <title>react</title>
   </head>
   <body>
-    <div class="root"></div>
-    <script>
-      const root = document.createElement("h1");
-      root.innerHTML = "Hello React";
-      document.getElementsByClassName("root")[0].appendChild(root);
-    </script>
+    <div id="root"></div>
+
+    <!-- <script>
+      const heading = document.createElement("h1");
+      heading.innerHTML = "this is javascript heading";
+      const root = document.getElementById("root");
+      root.appendChild(heading);
+    </script> -->
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -21,5 +24,7 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
+    <!-- //creating first react project -->
+    <script src="./app.js"></script>
   </body>
 </html>
