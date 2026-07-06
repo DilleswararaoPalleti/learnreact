@@ -2,6 +2,8 @@
 
 # Parcel will do:
 
+## Features
+
 - Dev Build
 - build local server
 - HMR=hot module replacement by using file watching algorithm written in c++
