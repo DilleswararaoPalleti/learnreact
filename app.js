@@ -1,29 +1,54 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// const heading = React.createElement("h1", { id: "heading" }, [
-//   React.createElement("div", { id: "h2" }, "this is h2"),
-//   React.createElement("p", { id: "para" }, "this is paragraph"),
-// ]);
-const headcomonent = <h1 className="jsx">this is react using jsx </h1>;
-const Headcomponent = () => (
-  <div className="container">
-    {headcomonent}
-    <h1>this is first react functional component</h1>
-  </div>
-);
-const elem = <span>this is span tag</span>;
-const Headcomponent2 = () => {
+/*
+-Header
+  -logo
+  -nav-items
+-Body
+  -search
+  -restaurant container
+    -restaurant carditems
+-footer
+  -copyright
+  -links
+  -address
+  -contacts
+*/
+const Header = () => {
   return (
-    <div className="container">
-      <Headcomponent />
-      {elem}
-      <h1>this is first react functional component2</h1>
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJTNnOr72cHwJqFdJSIsUG7El-XZMkPKxLNxIVbvFmfQ&s=10"
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
     </div>
   );
 };
-//jsx =>React.creatElement=>ReactElement-js obj=>HTML element
-
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search"></div>
+    </div>
+  );
+};
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header></Header>
+    </div>
+  );
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Headcomponent2 />);
+root.render(<AppLayout />);
 // root.render(headcomonent);
