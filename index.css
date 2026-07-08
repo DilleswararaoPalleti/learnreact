@@ -1,3 +1,22 @@
-h1 {
-  color: rgb(65, 53, 201);
+.header {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.logo {
+  width: 73px;
+  padding: 1px;
+}
+
+.nav-items > ul {
+  display: flex;
+  font-size: 15px;
+  list-style-type: none;
+}
+.nav-items > ul > li {
+  padding: 20px;
+}
+.nav-items {
+  padding: 0px 20px;
 }
