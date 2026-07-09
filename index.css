@@ -20,3 +20,36 @@
 .nav-items {
   padding: 0px 20px;
 }
+.res-card {
+  height: 250px;
+  width: 250px;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 5px;
+}
+.res-card:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.search {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.res-logo {
+  height: 130px;
+  width: 100%;
+
+  border-radius: 9px;
+}
+.description > h4,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
